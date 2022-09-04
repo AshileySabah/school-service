@@ -1,7 +1,7 @@
 const { Router } = require('express')
 const PessoaController = require('../controllers/PessoaController.js')
 
-const router = Router();
+const router = Router()
 
 router.get('/pessoas', PessoaController.pegaPessoasAtivas)
 router.get('/pessoas/todos', PessoaController.pegaTodasAsPessoas)

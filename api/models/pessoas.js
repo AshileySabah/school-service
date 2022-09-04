@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 const {
   Model
-} = require('sequelize');
+} = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
   class Pessoas extends Model {
     static associate(models) {
@@ -43,6 +43,6 @@ module.exports = (sequelize, DataTypes) => {
     scopes: {
       todos: { where: {} }
     }
-  });
-  return Pessoas;
-};
+  })
+  return Pessoas
+}

@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 const {
   Model
-} = require('sequelize');
+} = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
   class Turmas extends Model {
     static associate(models) {
@@ -16,6 +16,6 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Turmas',
     paranoid: true
-  });
-  return Turmas;
-};
+  })
+  return Turmas
+}

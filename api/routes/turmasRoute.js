@@ -1,7 +1,7 @@
 const { Router } = require('express')
 const TurmaController = require('../controllers/TurmaController.js')
 
-const router = Router();
+const router = Router()
 
 router.get('/turmas', TurmaController.pegaTodasAsTurmas)
 router.get('/turmas/:id', TurmaController.pegaUmaTurma)
